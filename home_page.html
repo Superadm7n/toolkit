@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        button {
+            padding: .5em 1.5em;
+            background: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005bb5;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+            background-color: #333;
+        }
+        h2 {
+            color: white;
+        }
+
+        p {
+            font-size: 16pt;
+            text-align: center;
+            color: white;
+        }
+
+        i {
+            color: #3d9eff;
+        }
+
+        .w3-container {
+            background-color: #242424;
+        }
+
+        .img_container{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        .ending_note {
+            padding-top: 2em;
+            text-align: center;
+            color: black;
+            size: 12pt;
+        }
+
+        .lang-btn {
+            margin: 10px 5px;
+      }
+
+        .jays_button{ 
+            background-color: #242424;
+            color: #3d9eff; 
+            padding-top: -2em;
+        }
+        .jays_button:hover{
+            background-color: #2e2e2e;
+        }
+        .w3-dropdown-content{ 
+            background-color: #242424;
+            color: #3d9eff;
+        }
+
+        .bar-item {
+            font-size: 12.5pt;
+            display: block;
+            padding: 1em 1.5em;
+            background-color: #242424;
+            text-decoration: none;
+            z-index: 1;
+        }
+        .bar-item:hover{ 
+            background-color: #2e2e2e;
+        }
+
+    </style>
+    <title>Toolkit</title>
+</head>
+<body>
+
+    <div class="w3-container">
+    <h2 style="display: block; block-size: 0em; text-align: center; font-size: 32pt; color: #3d9eff; font-family: Geneva;"><center>ToolKit</center></h2>
+    <div class="w3-dropdown-hover">
+        <button class="jays_button"><a class="fa fa-bars w3-xxlarge"></a></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="./pages/html/Atem_Software_diagram_translated.html" class="bar-item"><center> Atem Software </center></a>
+            <a href="./pages/html/Propresenter_7_diagram_translated.html" class="bar-item"><center> Propresenter </center></a>
+            <a href="./pages/html/diagram.html" class="bar-item"><center> Rack Diagram </center></a>
+            <a href="./pages/html/definitions.html" class="bar-item"> <center> Vocabulary </center> </a>
+        </div>
+    </div>
+    </div>
+
+    <div style="text-align:right; margin-top: none;">
+      <button class="lang-btn" onclick="setLanguage('en')">English</button>
+      <button class="lang-btn" onclick="setLanguage('es')">Español</button>
+    </div>
+    <div id="contentContainer" class="content">
+    <script>
+        const texts= {
+
+            en: `    <h2 align="center">Hello!</h2>
+    <p>This is <i>Toolkit</i>! A learning/resource environment, and brainchild of Jayden. This is not meant to teach you everything there is to know about what the Hillsong NJ production team does. <br> However, at the same time, it is a resource for you to learn about devices in your nearby surroundings that you may not have known anything about previously. </p>
+   
+    <p align="center"> The verse that this idea is based upon is that of Proverbs 10:14 (NIV): </p>
+    <p align="center"> <i>"The wise store up knowledge, but the mouth of a fool invites ruin."</i> </p>
+    <p align="center"> The intention is for all of you to store this knowledge up in your minds like seeds in the ground. So that one day it may bear much fruit for you and everyone around you to enjoy!</p>
+
+    <p class="ending_note"><i class="ending_note" style="color: white;">-Jayden Rodriguez</i></p> 
+     <img class="img_container" src="./AdobeStock_479292548.png" alt="Italian Trulli" style="float:center; width:15em; height:15em;">
+
+
+            `, 
+            es: `<h2 align="center">¡Hola!</h2>
+<p>¡Este es <i>Toolkit</i>! Un espacio de aprendizaje y recursos creado por Jayden. No está pensado para enseñarte todo sobre lo que hace el equipo de produccion de Hillsong NJ. <br> Mas bien, es una herramienta para ayudarte a conocer los dispositivos a tu alrededor que quizás no conocías antes.</p>
+
+<p align="center">Esta idea se inpira en Proverbios 10:14:</p>
+<p align="center"><i>"Los sabios guardan el conocimiento, pero la boca del necio causa su ruina."</i></p>
+<p align="center">El objectivo es que almacenes este conocimiento en tu mente como semillas en la tierra, para que algún día puede crecer y dar fruto que rodean puedan disfrutar.</p>
+
+<p class="ending_note"><i class="ending_note" style="color: white;">-Jayden Rodriguez</i></p>
+<img class="img_container" src="./AdobeStock_479292548.png" alt="Italian Trulli" style="float:center; width:15em; height:15em;">
+            `
+        };
+
+
+           function setLanguage(lang) {
+          document.getElementById('contentContainer').innerHTML = texts[lang];
+        }
+
+        setLanguage('en');
+    </script>
+
+  
+</body>
+</html>
