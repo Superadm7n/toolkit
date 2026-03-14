@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Propresenter 7</title>
+	<style> 
+		button {
+	        padding: .5em 1.5em;
+	        background: #0073e6;
+	        color: white;
+	        border: none;
+	        border-radius: 5px;
+	        cursor: pointer;
+	      }
+	      button:hover {
+	        background: #005bb5;
+	      }
+	      body, html {
+	        height: 100%;
+	        margin: 0;
+	        font-family: Arial, sans-serif;
+	        background-color: #333;
+	        color: white;
+	        position: relative;
+	      }
+
+	      img {
+	        display: block;
+	        margin: 1em auto;
+	        max-width: 90%;
+	        height: auto;
+	      }
+
+	      .w3-container {
+	        background-color: #242424;
+	      }
+
+	      .lang-btn {
+	        margin: 10px 5px;
+	      }
+
+	      .jays_button { 
+	          background-color: #242424;
+	          color: #3d9eff; 
+	          padding-top: -2em;
+	      }
+	      .jays_button:hover {
+	          background-color: #2e2e2e;
+	      }
+	      .w3-dropdown-content { 
+	          background-color: #242424;
+	          color: #3d9eff;
+	      }
+	      .bar-item {
+	          font-size: 12.5pt;
+	          display: block;
+	          padding: 1em 1.5em;
+	          background-color: #242424;
+	          text-decoration: none;
+	          z-index: 1;
+	      }
+	      .bar-item:hover{ 
+	          background-color: #2e2e2e;
+	      }
+
+    </style>
+</head>
+<body>
+	<div class="w3-container">
+  	<h2 style="display: block; block-size: 0em; text-align: center; font-size: 32pt; color: #3d9eff; font-family: Geneva;"><center>ToolKit</center></h2>
+  	<div class="w3-dropdown-hover">
+      <button class="jays_button"><a class="fa fa-bars w3-xxlarge"></a></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="../../home_page.html" class="bar-item"> <center> Home </center></a>
+        <a href="./Atem_Software_diagram_translated.html" class="bar-item"> <center> Atem Software </center></a>
+        <a href="./diagram.html" class="bar-item"><center>Rack Diagram</center></a>
+        <a href="./definitions.html" class="bar-item"> <center> Vocabulary</center></a>
+      </div>
+  </div>
+  </div>
+    <div style="text-align:right; margin-top: none;">
+      <button class="lang-btn" onclick="setLanguage('en')">English</button>
+      <button class="lang-btn" onclick="setLanguage('es')">Español</button>
+    </div>
+  <div id="contentContainer" class="content">
+  <script>
+    const texts = {
+      en:`
+			  <h1 style="color: red; font-size: 36pt; text-align:center;"><b> Propresenter 7 </b></h1>
+			  <p style="font-size: 16pt; padding-left: 2em;">
+			  	This page for Propresenter is not an in depth look at propresenter this is again a simple overview to help you (the lyrics/graphics operator) understand the program you are working with on a weekly basis. 
+			  </p>
+			  <img src="propresenter7_home.jpg" alt="Propresenter home page">
+			  <p style="font-size: 16pt; padding-left: 2em;"> 
+			  	You may recognize the image above as Propresenter. If you do don't worry it is indeed Propresenter this is not a trick photo. I will not be going over how to create lyrics or graphics as that is outside the scope of this site's purpose but I will be going over some less used sections of Propresenter. To start with let's go over the "screens" section found on the top left of your computer screen. 
+			  </p>
+			  <img src="propresenter7_screens.png" alt="Propresenter screens settings">
+			  <p style="font-size: 16pt; padding-left: 2em;">
+			  	You can configure what screen shows what image using the option named "configfure screens" in the dropdown shown above. That should make a pop-up window show up on your computer that looks like the one below:
+			  </p>
+			  <img src="propresenter7_screens_2.png" alt="Propresenter screens pop-up">
+			  <p style="font-size: 16pt; padding-left: 2em;">
+			  	Now the image above keep in mind is simply a screen shot from Google images so it does not represent perfectly what you see on your computer. In a recent effort by me (Jayden) to consolidate laptop usage and put lyrics on the big LED wall, some changes have been made to our system. If you can't by now see the difference, there are 2 options under the "Audience" section. These 2 options correspond to the different screens in the sanctuary one being the LED wall and the other being the 4 other screens named "side screens" in Propresenter. The so called side screens should have an output of "decimator" this is the red device behind your computer. The LED wall should have an output of "BMC HDMI" or vice versa "HDMI BMC". Which is the HDMI cable connected to the rack to your left. 
+			  </p>
+			  <img src="propresenter7_screens_3.png">
+			  <p style="font-size: 16pt; padding-left: 2em;">
+			  	Now if you go back to your home page you can go to that screens option above but now go to the "edit looks" option instead. This will bring up yet another pop-up such as the one below:
+			  </p>
+			  <img src="propresenter7_looks.png">
+			  <p style="font-size: 16pt; padding-left: 2em; ">
+			  	Now this is brand new to our system. This page is called "looks" as you saw before. In essence this page allows us to take the different screens and give them different formats again called "looks" without changing the actual content. This is how we are able to put the lyrics on the top of the LED wall and still have them in the middle of the other "side screens". To do this you are going to want to look for the column appropriately named "LED wall" go down to the row named "presentation" and it should bring up (yet another) pop-up with different layouts for texts. the only thing you should have to do is look for the one that has the text on the top of the screen. It should be the first one shown. 
+			  </p>
+			  <br>
+			  <p style="font-size: 16pt; padding-left: 2em;">
+			  	Resource: https://www.youtube.com/watch?v=DR0Ak_fBWBs
+			  </p>
+			  <br>
+      	`,
+      es: `
+      		<h1 style="color: red; font-size: 36pt; text-align:center;"><b> Propresenter 7 </b></h1>
+
+					<p style="font-size: 16pt; padding-left: 2em;">
+					Esta página sobre Propresenter no es una explicación profunda del programa. Es solo una vista general sencilla para ayudarte a ti (el operador de letras/gráficos) a entender el programa que usas cada semana.
+					</p>
+
+					<img src="propresenter7_home.jpg" alt="Página principal de Propresenter">
+
+					<p style="font-size: 16pt; padding-left: 2em;">
+					Tal vez reconozcas la imagen de arriba como Propresenter. Si la reconoces, no te preocupes, sí es Propresenter no es una foto engañosa. No voy a explicar cómo crear letras o gráficos porque eso está fuera del propósito de este sitio. Pero sí voy a explicar algunas partes de Propresenter que no se usan tan seguido. Para empezar, vamos a ver la sección llamada "screens" que está en la parte superior izquierda de la pantalla de tu computadora.
+					</p>
+
+					<img src="propresenter7_screens.png" alt="Configuración de pantallas de Propresenter">
+
+					<p style="font-size: 16pt; padding-left: 2em;">
+					Puedes configurar qué pantalla muestra qué imagen usando la opción llamada "configure screens" en el menú que aparece arriba. Cuando hagas clic ahí, debería aparecer una ventana nueva en tu computadora que se ve como la de abajo.
+					</p>
+
+					<img src="propresenter7_screens_2.png" alt="Ventana de configuración de pantallas de Propresenter">
+
+					<p style="font-size: 16pt; padding-left: 2em;">
+					Recuerda que la imagen de arriba es solo una captura de pantalla de Google Images, así que no representa exactamente lo que verás en tu computadora. Recientemente, en un esfuerzo mío (Jayden) para usar menos laptops y poner las letras en la gran pared LED, hicimos algunos cambios en nuestro sistema. Si todavía no ves la diferencia, hay 2 opciones bajo la sección "Audience". Estas dos opciones corresponden a las diferentes pantallas en el santuario: una es la pared LED y la otra son las otras 4 pantallas llamadas "side screens" en Propresenter.
+					</p>
+
+					<p style="font-size: 16pt; padding-left: 2em;">
+					Las llamadas "side screens" deberían tener una salida llamada "decimator". Este es el dispositivo rojo que está detrás de tu computadora. La pared LED debería tener una salida llamada "BMC HDMI" o "HDMI BMC", que es el cable HDMI conectado al rack a tu izquierda.
+					</p>
+
+					<img src="propresenter7_screens_3.png" alt="Configuración de salidas de pantalla">
+
+					<p style="font-size: 16pt; padding-left: 2em;">
+					Ahora, si vuelves a la página principal, puedes ir otra vez a la opción de "screens", pero esta vez selecciona la opción "edit looks". Esto abrirá otra ventana como la que ves abajo.
+					</p>
+
+					<img src="propresenter7_looks.png" alt="Configuración de looks en Propresenter">
+
+					<p style="font-size: 16pt; padding-left: 2em;">
+					Esto es algo completamente nuevo en nuestro sistema. Esta página se llama "looks", como viste antes. Básicamente, esta página nos permite usar diferentes formatos para cada pantalla (llamados "looks") sin cambiar el contenido.
+					</p>
+
+					<p style="font-size: 16pt; padding-left: 2em;">
+					Gracias a esto podemos poner las letras en la parte superior de la pared LED y al mismo tiempo mantenerlas en el centro de las otras "side screens". Para hacer esto, busca la columna llamada "LED wall". Luego baja hasta la fila llamada "presentation". Esto abrirá otra ventana con diferentes diseños para el texto.
+					</p>
+
+					<p style="font-size: 16pt; padding-left: 2em;">
+					Lo único que tendrás que hacer es buscar el diseño que tenga el texto en la parte arriba de la pantalla. Normalmente es el primero que aparece.
+					</p>
+
+					<br>
+
+					<p style="font-size: 16pt; padding-left: 2em;">
+					Recurso: https://www.youtube.com/watch?v=DR0Ak_fBWBs
+					</p>
+      		<br>
+      		`
+ 			};
+
+ 			 function setLanguage(lang) {
+        document.getElementById('contentContainer').innerHTML = texts[lang];
+    	}
+
+      setLanguage('en');
+	</script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+      button {
+        padding: .5em 1.5em;
+        background: #0073e6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #005bb5;
+      }
+      body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #333;
+        color: white;
+        position: relative;
+      }
+
+      img {
+        display: block;
+        margin: 1em auto;
+        max-width: 90%;
+        height: auto;
+      }
+
+      .w3-container {
+        background-color: #242424;
+      }
+
+      .lang-btn {
+        margin: 10px 5px;
+      }
+
+      .jays_button { 
+          background-color: #242424;
+          color: #3d9eff; 
+          padding-top: -2em;
+      }
+      .jays_button:hover {
+          background-color: #2e2e2e;
+      }
+      .w3-dropdown-content { 
+          background-color: #242424;
+          color: #3d9eff;
+      }
+      .bar-item {
+          font-size: 12.5pt;
+          display: block;
+          padding: 1em 1.5em;
+          background-color: #242424;
+          text-decoration: none;
+          z-index: 1;
+      }
+      .bar-item:hover{ 
+          background-color: #2e2e2e;
+      }
+
+    </style>
+</head>
+<body>
+
+  <div class="w3-container">
+  <h2 style="display: block; block-size: 0em; text-align: center; font-size: 32pt; color: #3d9eff; font-family: Geneva;"><center>ToolKit</center></h2>
+  <div class="w3-dropdown-hover">
+      <button class="jays_button"><a class="fa fa-bars w3-xxlarge"></a></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="../../home_page.html" class="bar-item"> <center> Home </center></a>
+        <a href="./Propresenter_7_diagram_translated.html" class="bar-item"><center> Propresenter </center></a>
+        <a href="./diagram.html" class="bar-item"><center>Rack Diagram</center></a>
+        <a href="./definitions.html" class="bar-item"> <center> Vocabulary</center></a>
+      </div>
+  </div>
+  </div>
+    <div style="text-align:right; margin-top: none;">
+      <button class="lang-btn" onclick="setLanguage('en')">English</button>
+      <button class="lang-btn" onclick="setLanguage('es')">Español</button>
+    </div>
+  <div id="contentContainer" class="content">
+  <script>
+    const texts = {
+      en: `
+        <h1 style="color: red; font-size: 36pt; text-align:center;">Atem Software Control</h1>
+        <p style="font-size: 16pt; padding-left: 2em;">
+          This will not be a very in depth look at the Atem software but should be enough to at least guide you in the right direction when trying to fix a problem.<br>
+          When you first open the software your screen should look somewhat like the picture below:
+        </p>
+        <img src="images.jpeg" alt="atem software">
+
+        <p style="font-size: 16pt; padding-left: 2em; margin-top: 2em;">
+          You should have a row of buttons named program and a row of buttons named preview. These two rows tell you what is live (or program) and what is "on preview" (or just preview).<br>
+          Of course this is just an online picture so keep in mind things will not be EXACTLY as they are on your screen. On the right of the row labeled program you should see a row of buttons all named "ON AIR" — this is what's bringing the lyrics on screen. If the lyrics are ever not showing up on screen, check if the first "ON AIR" button is red. If not, press it once and the lyrics should appear again.<br>
+          The mechanism by which this happens is called an "upstream key". Don't let the name scare you — it's simpler than it sounds. The settings for this feature are on the right under "upstream key 1". The "1" label is just because you have multiple "ON AIR" buttons, each corresponding to an upstream key you can create. It should look something like this:
+          <b style="color: red;"><br>WARNING: DO NOT SWITCH ANYTHING ON YOUR COMPUTER BASED ON ANY OF THE PICTURES BELOW!!</b>
+        </p>
+        <img src="upstream key.jpg" alt="atem software">
+
+        <p style="font-size: 16pt; padding-left: 2em; margin-top: 2em;">
+          In this section of the software you will see many different settings. Don't worry about memorizing all of them. The key ones are fill and key source, which vary depending on your location in the church. They control how lyrics appear on screen along with luma, chroma, master, and DVE sections — different ways of removing the preset background.<br>
+          You should also notice the two buttons at the top center called "Mix Effects 1" and "Mix Effects 2", as shown below.
+        </p>
+        <img src="ME.jpg" alt="atem software">
+
+        <p style="font-size: 16pt; padding-left: 2em; margin-top: 2em;">
+          This picture has extra buttons compared to your screen. The bottom line: the "Mix Effects" buttons represent two halves of the church. Mix Effects 1 is church online and lobby; Mix Effects 2 is front of house or sanctuary.<br>
+          Often I, Jayden :), refer to them as M.E. 1 and M.E. 2. Changes in M.E. 1 only affect church online; changes in M.E. 2 only affect the sanctuary. The large LED wall is technically part of M.E. 2, but usually isn't affected, though exceptions exist.<br>
+          Finally, the "Media" button at the bottom opens a different page:
+        </p>
+        <img src="media page.jpg" alt="atem software">
+
+        <p style="font-size: 16pt; padding-left: 2em; margin-top: 2em; margin-bottom: 5em;">
+          This page controls the media that appears when you "take" the LED wall. To change media, drag an image from your files into the open center slot, then into both slots on the right.
+        </p>
+        <br> 
+        <p style="font-size: 16pt; padding-left: 2em; margin-top: 2em; margin-bottom: 5em;">
+          resource: https://www.youtube.com/watch?v=XVuwLCd2loo
+        </p>
+        <br>
+      `,
+      es: `
+        <h1 style="color: red; font-size: 36pt; text-align:center;">Control del ATEM Software</h1>
+        <p style="font-size: 16pt; padding-left: 2em;">
+          Esto no será una explicación muy profunda del software ATEM, pero debería ser suficiente para guiarte en la dirección correcta cuando intentes resolver un problema.<br>
+          Al abrir el software por primera vez, tu pantalla debería verse más o menos como en la imagen de abajo:
+        </p>
+        <img src="images.jpeg" alt="atem software">
+
+        <p style="font-size: 16pt; padding-left: 2em; margin-top: 2em;">
+          Deberías ver una fila de botones llamada <b>program</b> y otra llamada <b>preview</b>. Estas dos filas muestran qué está en vivo (program) y qué está en previo (preview).<br>
+          Claro que esta es solo una imagen de referencia en línea, así que tu pantalla no se verá EXACTAMENTE igual. A la derecha de la fila <b>program</b> verás otra fila de botones llamados <b>ON AIR</b>, que muestran las letras en pantalla. Si las letras no aparecen, revisa si el primer botón <b>ON AIR</b> está rojo. Si no, presiónalo y las letras aparecerán.<br>
+          El mecanismo se llama <b>upstream key</b>. No te asustes por el nombre: es más simple de lo que parece. Los ajustes están a la derecha bajo <b>upstream key 1</b>. El "1" indica que hay varios botones <b>ON AIR</b>, cada uno corresponde a un upstream key que puedes crear. Debería verse así: 
+        </p>
+        
+          <p style="font-size: 16pt; padding-left: 2em; margin-top: 2em;"><b style="color:red;"> ADVERTENCIA: ¡NO ALTERES LA CONFIGURACIÓN DE TU COMPUTADORA SEGÚN LO QUE VEAS EN ESTAS IMÁGENES!</b></p>
+        
+        <img src="upstream key.jpg" alt="atem software">
+
+        <p style="font-size: 16pt; padding-left: 2em; margin-top: 2em;">
+          En esta sección verás muchas configuraciones. No te preocupes por memorizar todo. Lo más importante son <b>fill</b> y <b>key source</b>, que cambian según tu ubicación en la iglesia. Controlan cómo aparecen las letras, junto con <b>luma</b>, <b>chroma</b>, <b>master</b> y <b>DVE</b> — formas de eliminar el fondo predefinido.<br>
+          También verás los dos botones en el centro superior llamados <b>Mix Effects 1</b> y <b>Mix Effects 2</b>, como se muestra a continuación.
+        </p>
+        <img src="ME.jpg" alt="atem software">
+
+        <p style="font-size: 16pt; padding-left: 2em; margin-top: 2em;">
+          Esta imagen tiene botones extra respecto a tu pantalla. Lo importante: los botones <b>Mix Effects</b> representan dos mitades de la iglesia. Mix Effects 1 es iglesia en línea y lobby; Mix Effects 2 es santuario.<br>
+          A menudo me escucharás, Jayden :), llamarlos M.E. 1 y M.E. 2. Cambios en M.E. 1 solo afectan la iglesia en línea; cambios en M.E. 2 solo afectan el santuario. La gran pantalla LED es parte de M.E. 2, pero generalmente no se ve afectada, aunque hay excepciones.<br>
+          Finalmente, el botón <b>Media</b> en la parte inferior abre otra página:
+        </p>
+        <img src="media page.jpg" alt="atem software">
+
+        <p style="font-size: 16pt; padding-left: 2em; margin-top: 2em; margin-bottom: 5em;">
+          Esta página controla los medios que aparecen cuando “tomas” la pantalla LED. Para cambiar contenido, arrastra una imagen de tus archivos al espacio central abierto y luego a ambos espacios del lado derecho.
+        </p>
+        <br>
+        <p style="font-size: 16pt; padding-left: 2em; margin-top: 2em; margin-bottom: 5em;">
+          recurso: https://www.youtube.com/watch?v=XVuwLCd2loo
+        </p>
+        <br>
+      `
+    };
+
+      function setLanguage(lang) {
+        document.getElementById('contentContainer').innerHTML = texts[lang];
+    }
+
+      setLanguage('en');
+  </script>
+
+</body>
+</html>

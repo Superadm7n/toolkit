@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        button {
+            padding: 10px 15px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005bb5;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+        }
+        .rack-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .rack {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            border: .5em solid #bfbfbf;
+            padding: 10px;
+            width: 60%;
+            height: 60%;
+            border-radius: 3em;
+        }
+        .server-container {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            width: 100%;
+        }
+        .server {
+            position: relative;
+            flex-grow: 1;
+            background-color: #3d9eff;
+            border: 1px solid #666;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 18pt;
+            position: relative;
+            height: 3em;
+            border-radius: .3em;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+
+        .serverdrop-content {
+            color: white;
+            display: none;
+            position: absolute;
+            background-color: #737373;
+            width: 300px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            top: 0;
+            left: 100%;
+            border-radius: .5em;
+        }
+        .server:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .server:hover .serverdrop-content {
+            display: block;
+        }
+        .w3-container {
+            background-color: #242424;
+        }
+        .lang-btn {
+        margin: 10px 5px;
+      }
+
+        .jays_button{ 
+            background-color: #242424;
+            color: #3d9eff; 
+            padding-top: -2em;
+        }
+        .jays_button:hover{
+            background-color: #2e2e2e;
+        }
+        .w3-dropdown-content{ 
+            background-color: #242424;
+            color: #3d9eff;
+        }
+
+        .bar-item {
+            font-size: 12.5pt;
+            display: block;
+            padding: 1em 1.5em;
+            background-color: #242424;
+            text-decoration: none;
+            z-index: 1;
+        }
+        .bar-item:hover{ 
+            background-color: #2e2e2e;
+        }
+
+
+        
+    </style>
+    <title>Toolkit</title>
+</head>
+<body>
+<div class="w3-container">
+    <h2 style="display: block; block-size: 0em; text-align: center; font-size: 32pt; color: #3d9eff; font-family: Geneva;"><center>ToolKit</center></h2>
+
+    <div class="w3-dropdown-hover">
+        <button class="jays_button"><a class="fa fa-bars w3-xxlarge"></a></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="../../home_page.html" class="bar-item"> <center> Home </center> </a>
+            <a href="./Atem_Software_diagram_translated.html" class="bar-item"> <center> Atem Software </center></a>
+            <a href="./Propresenter_7_diagram_translated.html" class="bar-item"><center> Propresenter </center></a>
+            <a href="./definitions.html" class="bar-item"><center> Vocabulary </center> </a>
+        </div>
+    </div>
+</div>
+     <div style="text-align:right; margin-top: none;">
+      <button class="lang-btn" onclick="setLanguage('en')">English</button>
+      <button class="lang-btn" onclick="setLanguage('es')">Español</button>
+    </div>
+
+    <div id="contentContainer" class="content">
+<script>
+    const texts= {
+
+        en: `
+</div>
+<div class="rack-container">
+    <div class="rack">
+        <div class="server-container">
+            <div class="server">
+                <a style="text-decoration: none; color: black;"><i class="fas fa-server"> Power Strip</i></a>
+                <div class="serverdrop-content">Provides small amounts of power to the rack (not for larger components however).</div>
+            </div>
+            <div class="server">
+                <a  style="text-decoration: none; color: black;"><i class="fas fa-server"> Mac mini holder</i></a>
+                <div class="serverdrop-content">This contains a Mac mini. All the functions that this is serving is not 100% clear just yet but the one that is clear is that it's controlling the streamdeck (the small device next to the lyrics computer that "takes" the LED wall)</div>
+            </div>
+            <div class="server">
+                <a style="text-decoration: none; color: black;"><i class="fas fa-server"> Video Recorder</i></a>
+                <div class="serverdrop-content">Is able to capture high resolution video from both the broadcast cameras and the small robotic ones.</div>
+            </div>
+            <div class="server">
+                <a class="text" style="text-decoration: none; color: black;"><i class="fas fa-server"> Patch Panel</i></a>
+                <div class="serverdrop-content">Takes an input and sends it to an output or vice versa. But does this all with physical connections unlike the Video-Hub.</div>
+            </div>
+            <div class="server">
+                <a style="text-decoration: none; color: black;"><i class="fas fa-server"> Atem</i></a>
+                <div class="serverdrop-content">The brains behind the Atem switcher and application. It recieves video signal from the video hub.</div>
+            </div>
+            <div class="server">
+                <a style="text-decoration: none; color: black;"><i class="fas fa-server"> Video-Hub</i></a>
+                <div class="serverdrop-content">The brains behind the Patch panel and video hub app. It recieves video signal from the patch panel. It also transmits video signals throughout the campus.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function getServerInfo(serverNumber) {
+        let serverInfoDropdown = document.getElementById('serverInfo');
+        let option = document.createElement('option');
+        serverInfoDropdown.add(option);
+    }`, 
+
+    es: `</div>
+<div class="rack-container">
+    <div class="rack">
+        <div class="server-container">
+            <div class="server">
+                <a style="text-decoration: none; color: black;"><i class="fas fa-server"> Power Strip</i></a>
+                <div class="serverdrop-content">Da una pequeña cantidad de energía al rack (pero no para partes grandes).</div>
+            </div>
+            <div class="server">
+                <a  style="text-decoration: none; color: black;"><i class="fas fa-server"> Mac mini holder</i></a>
+                <div class="serverdrop-content">Tiene una Mac mini. No sabe todo lo que hace todavía, pero sí se sabe que controla el streamdeck (el pequeño aparato al lado de la computadora de letras que maneja la pared LED).</div>
+            </div>
+            <div class="server">
+                <a style="text-decoration: none; color: black;"><i class="fas fa-server"> Video Recorder</i></a>
+                <div class="serverdrop-content">Puede grabar video en alta calidad de las cámaras grandes y de las pequeñas cámaras robóticas.</div>
+            </div>
+            <div class="server">
+                <a class="text" style="text-decoration: none; color: black;"><i class="fas fa-server"> Patch Panel</i></a>
+                <div class="serverdrop-content">Toma una entrada y la envía a una salida o al revés. Hace esto con cables físicos, no por software como el Video-Hub.</div>
+            </div>
+            <div class="server">
+                <a style="text-decoration: none; color: black;"><i class="fas fa-server"> Atem</i></a>
+                <div class="serverdrop-content">Es el cerebro del conmutador y la aplicación Atem. Recibe la señal de video del video hub.</div>
+            </div>
+            <div class="server">
+                <a style="text-decoration: none; color: black;"><i class="fas fa-server"> Video-Hub</i></a>
+                <div class="serverdrop-content">Es el cerebro del panel de conexiones y de la aplicación del video hub. Recibe video del panel de conexiones y también envía señales de video por todo el campus.</div>
+            </div>
+        </div>
+    </div>
+</div>`
+        };
+           function setLanguage(lang) {
+          document.getElementById('contentContainer').innerHTML = texts[lang];
+        }
+
+        setLanguage('en');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+    body, html {
+    	background-color: #333;
+    	color: white;
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .w3-container {
+    background-color: #242424;
+	}
+    li {
+    	text-align: left;
+    	font-size: 18pt;
+    	padding-left: 5em;
+    }
+	button {
+	    padding: 10px 15px;
+	    background: #0073e6;
+	    color: white;
+	    border: none;
+	    border-radius: 5px;
+	    cursor: pointer;
+	}
+
+    button:hover {
+        background: #005bb5;
+    }
+
+    .lang-btn {
+        margin: 10px 5px;
+  	}
+
+    .jays_button{ 
+        background-color: #242424;
+        color: #3d9eff; 
+        padding-top: -2em;
+    }
+    .jays_button:hover{
+        background-color: #2e2e2e;
+    }
+    .w3-dropdown-content{ 
+        background-color: #242424;
+        color: #3d9eff;
+    }
+
+    .bar-item {
+        font-size: 12.5pt;
+        display: block;
+        padding: 1em 1.5em;
+        background-color: #242424;
+        text-decoration: none;
+        z-index: 1;
+    }
+    .bar-item:hover{ 
+        background-color: #2e2e2e;
+    }
+
+    </style>
+	<title>Toolkit</title>
+</head>
+<body>
+	<div class="w3-container">
+    <h2 style="display: block; block-size: 0em; text-align: center; font-size: 32pt; color: #3d9eff; font-family: Geneva;"><center>ToolKit</center></h2>
+
+    <div class="w3-dropdown-hover">
+        <button class="jays_button"><a class="fa fa-bars w3-xxlarge"></a></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        	<a href="../../home_page.html" class="bar-item"> <center> Home </center> </a>
+            <a href="./Atem_Software_diagram_translated.html" class="bar-item"><center>Atem Software </center></a>
+            <a href="./Propresenter_7_diagram_translated.html" class="bar-item"><center> Propresenter </center></a>
+            <a href="./diagram.html" class="bar-item"><center> Rack Diagram </center> </a>
+        </div>
+    </div>
+	</div>
+ <div style="text-align:right; margin-top: none;">
+      <button class="lang-btn" onclick="setLanguage('en')">English</button>
+      <button class="lang-btn" onclick="setLanguage('es')">Español</button>
+    </div>
+
+    <div id="contentContainer" class="content">
+<script>
+    const texts= { 
+    en: `
+	<h2 align="center"> <b>Vocabulary</b></h2>
+	<li> Atem Switcher - a device that interfaces with the atem control panel located in the broadcast room to switch between different sdi and xlr inputs</li>
+	<li> Rack - a large container to hold and centeralize multiple critical infastructure devices such as the atem switcher or video hub </li>
+	<li> Video Hub - a device that takes inputs and sends them to multiple outputs ex: the input of camera 1 to the output of lobby TV </li>
+	<li> Pro Presenter - an application that allows us to display graphics, lower thirds, etcetera</li>
+	<li> M/E 1 and 2 - Mixed Effect 1 and 2. This is like an imaginary box that contains within it different outputs in order to not have to do the tedious work of sending the same output to multiple inputs </li>
+	<li> Lower/Side thirds - a term that refers to the position of a subject/object on a screen if you were to split the screen into equally sized thirds</li>
+	<li> XLR - eXternal Line Return is a cable that normally has three prongs but can have more in it that carries audio from point to point</li>
+	<li> SDI - Serial Digital Interface is a cable that can carry both audio and visual singals from point to point (usually only has 1 pin) </li>
+	<li> HDMI - High Definition Mulitmedia Interface is a cable that similarly to SDI carries both audio and visual signals from point to point</li>
+	<li> Stream Deck - a device that allows for you to streamline repetitive proccesses with multiple easily programmable buttons </li>
+	<li> OBS - Open Broadcaster Software is an application that aids in streaming the video and graphics feeds to Youtube </li>
+	<li> Atem control panel - is the so called "direction board" that allows the director of the day to switch between camera feeds </li>
+	<li> FOH - Front Of House normally referring to the location in the back of the sanctuary where the production team operates </li>
+	<li> MD - Music Director
+	<li> Pan - to move the camera from left to right or vice versa </li>
+	<li> Tilt - to move the camera up and down </li>
+	<li> Rack focus - to go from in focus to out of focus or vice versa in an artistic fashion </li>
+	<li> Iris/Apeture - referring to the small hole within the camera lens that lets light in</li>
+	<li> ISO - is a setting on the camera set by the International Organization for Standardization. it is referring to the sensitivity the camera sensor has to light </li>
+	<li> Key - in this context it refers to the ability the computer has to filter out a specific color in order to show the given background behind it </li>
+	<br>
+	<br> 
+    `, 
+   es: `
+	   	<h2 align="center"><b>Vocabulario</b></h2>
+
+	<li>ATEM Switcher - un dispositivo que se conecta con el panel de control ATEM en la sala de transmisión para cambiar entre diferentes entradas SDI y XLR.</li>
+
+	<li>Rack - un gabinete grande donde se guardan y organizan varios equipos importantes, como el ATEM Switcher o el Video Hub.</li>
+
+	<li>Video Hub - un dispositivo que recibe señales de entrada y las envía a varias salidas. Por ejemplo, la señal de la cámara 1 puede enviarse al televisor del lobby.</li>
+
+	<li>ProPresenter - un programa que permite mostrar gráficos, lower thirds y otros elementos en la pantalla.</li>
+
+	<li>M/E 1 y 2 - Mixed Effect 1 y 2. Es como una “caja virtual” que maneja diferentes salidas para no tener que enviar manualmente la misma señal a muchos lugares.</li>
+
+	<li>Lower/Side thirds - un término que describe la posición de algo en la pantalla si la divides en tres partes iguales.</li>
+
+	<li>XLR - un cable que normalmente tiene tres pines y se usa para enviar audio de un lugar a otro.</li>
+
+	<li>SDI - un cable que puede enviar video y audio de un lugar a otro (normalmente tiene un solo conector).</li>
+
+	<li>HDMI - un cable que, igual que SDI, puede enviar video y audio entre dispositivos.</li>
+
+	<li>Stream Deck - un dispositivo con botones programables que permite hacer acciones repetitivas de forma rápida.</li>
+
+	<li>OBS - un programa que ayuda a transmitir video y gráficos en vivo a plataformas como YouTube.</li>
+
+	<li>ATEM control panel - el panel de control que usa el director para cambiar entre las diferentes cámaras.</li>
+
+	<li>FOH - normalmente se refiere al lugar en la parte trasera del santuario donde trabaja el equipo de producción.</li>
+
+	<li>MD - Director de música.</li>
+
+	<li>Pan - mover la cámara de izquierda a derecha o de derecha a izquierda.</li>
+
+	<li>Tilt - mover la cámara hacia arriba o hacia abajo.</li>
+
+	<li>Rack focus - cambiar el enfoque de la cámara de un objeto a otro de forma intencional.</li>
+
+	<li>Iris/Aperture - la pequeña abertura dentro del lente de la cámara que deja entrar la luz.</li>
+
+	<li>ISO - una configuración de la cámara que controla qué tan sensible es el sensor a la luz.</li>
+
+	<li>Key - en este contexto, significa que la computadora puede quitar un color específico para mostrar un fondo diferente detrás.</li>
+
+	<br>
+	<br>
+	   	`
+	}; 
+	 function setLanguage(lang) {
+        document.getElementById('contentContainer').innerHTML = texts[lang];
+   	}
+
+      setLanguage('en');
+	</script>
+</body>
+</html>
