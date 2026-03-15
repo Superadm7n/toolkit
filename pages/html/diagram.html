@@ -21,7 +21,6 @@
 
         body, html {
             height: 100%;
-            margin: 0;
             font-family: Arial, sans-serif;
             background-color: #333;
         }
@@ -34,8 +33,8 @@
             display: flex;
             border: .5em solid #bfbfbf;
             padding: 1em;
-            width: 60em;
-            height: 36em;
+            width: 95%;
+            max-width: 900px;
             border-radius: 3em;
         }
         .server-container {
@@ -47,7 +46,7 @@
             position: relative;
             background-color: #3d9eff;
             border: .05em solid #666;
-            margin: .2em;
+            margin: .25em 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -56,6 +55,10 @@
             height: 3em;
             border-radius: .3em;
             transition: transform 0.3s;
+        }
+
+        .server:active {
+            transform: scale(.98);
         }
 
         .serverdrop-content {
@@ -79,8 +82,8 @@
             background-color: #242424;
         }
         .lang-btn {
-        margin: 10px 5px;
-      }
+            margin: 10px 5px;
+        }
 
         .jays_button{ 
             background-color: #242424;
@@ -105,6 +108,22 @@
         }
         .bar-item:hover{ 
             background-color: #2e2e2e;
+        }
+        @media (max-width:600px){
+
+        h2{
+            font-size:24px !important;
+        }
+
+        .server{
+            font-size:14px;
+            height:44px;
+        }
+
+        .serverdrop-content{
+            font-size:14px;
+        }
+
         }
 
 
@@ -161,15 +180,15 @@
         <div class="server-container">
             <div class="server">
                 <a style="text-decoration: none; color: black;"><i class="fas fa-server"> Power Strip</i></a>
-                <div class="serverdrop-content">Provides small amounts of power to the rack (not for larger components however).</div>
+                <div class="serverdrop-content">Provides small amounts of power to the rack (not for larger components, however).</div>
             </div>
             <div class="server">
                 <a  style="text-decoration: none; color: black;"><i class="fas fa-server"> Mac mini holder</i></a>
-                <div class="serverdrop-content">This contains a Mac mini. All the functions that this is serving is not 100% clear just yet but the one that is clear is that it's controlling the streamdeck (the small device next to the lyrics computer that "takes" the LED wall)</div>
+                <div class="serverdrop-content">This contains a Mac mini. All the functions that this is serving are not 100% clear just yet, but the one that is clear is that it's controlling the streamdeck (the small device next to the lyrics computer that "takes" the LED wall)</div>
             </div>
             <div class="server">
                 <a style="text-decoration: none; color: black;"><i class="fas fa-server"> Video Recorder</i></a>
-                <div class="serverdrop-content">Is able to capture high resolution video from both the broadcast cameras and the small robotic ones.</div>
+                <div class="serverdrop-content">Is able to capture high-resolution video from both the broadcast cameras and the small robotic ones.</div>
             </div>
             <div class="server">
                 <a class="text" style="text-decoration: none; color: black;"><i class="fas fa-server"> Patch Panel</i></a>
@@ -177,11 +196,11 @@
             </div>
             <div class="server">
                 <a style="text-decoration: none; color: black;"><i class="fas fa-server"> Atem</i></a>
-                <div class="serverdrop-content">The brains behind the Atem switcher and application. It recieves video signal from the video hub.</div>
+                <div class="serverdrop-content">The brains behind the Atem switcher and application. It receives a video signal from the video hub.</div>
             </div>
             <div class="server">
                 <a style="text-decoration: none; color: black;"><i class="fas fa-server"> Video-Hub</i></a>
-                <div class="serverdrop-content">The brains behind the Patch panel and video hub app. It recieves video signal from the patch panel. It also transmits video signals throughout the campus.</div>
+                <div class="serverdrop-content">The brains behind the Patch panel and video hub app. It receives a video signal from the patch panel. It also transmits video signals throughout the campus.</div>
             </div>
         </div>
     </div>
