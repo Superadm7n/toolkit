@@ -35,10 +35,11 @@
             justify-content: flex-start;
             align-items: center;
             border: .5em solid #bfbfbf;
-            padding: 10px;
+            padding: 1em;
             width: 60%;
             height: 60%;
             border-radius: 3em;
+            margin: 1.5em;
         }
         .server-container {
             display: flex;
@@ -50,8 +51,8 @@
             position: relative;
             flex-grow: 1;
             background-color: #3d9eff;
-            border: 1px solid #666;
-            margin: 5px;
+            border: .05em solid #666;
+            margin: .2em;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -69,16 +70,16 @@
             display: none;
             position: absolute;
             background-color: #737373;
-            width: 300px;
+            width: 13em;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding: 12px 16px;
+            padding: .8em 1.2em;
             z-index: 1;
             top: 0;
             left: 100%;
             border-radius: .5em;
         }
         .server:hover {
-            transform: translateY(-5px);
+            transform: translateY(-.2em);
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         }
         .server:hover .serverdrop-content {
@@ -128,7 +129,7 @@
     <div class="w3-dropdown-hover">
         <button class="jays_button"><a class="fa fa-bars w3-xxlarge"></a></button>
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="../../index.html" class="bar-item"> <center> Home </center> </a>
+            <a href="../../home_page.html" class="bar-item"> <center> Home </center> </a>
             <a href="./Atem_Software_diagram_translated.html" class="bar-item"> <center> Atem Software </center></a>
             <a href="./Propresenter_7_diagram_translated.html" class="bar-item"><center> Propresenter </center></a>
             <a href="./definitions.html" class="bar-item"><center> Vocabulary </center> </a>
@@ -177,12 +178,7 @@
     </div>
 </div>
 
-<script>
-    function getServerInfo(serverNumber) {
-        let serverInfoDropdown = document.getElementById('serverInfo');
-        let option = document.createElement('option');
-        serverInfoDropdown.add(option);
-    }`, 
+`, 
 
     es: `</div>
 <div class="rack-container">
