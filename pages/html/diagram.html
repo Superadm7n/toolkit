@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
         button {
-            padding: 10px 15px;
+            padding: .5em 1.5em;
             background: #0073e6;
             color: white;
             border: none;
@@ -25,26 +27,21 @@
         }
         .rack-container {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
+            justify-content: center;         
         }
+
         .rack {
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
             border: .5em solid #bfbfbf;
             padding: 1em;
-            width: 60%;
-            height: 60%;
+            width: 60em;
+            height: 36em;
             border-radius: 3em;
             margin: 1.5em;
         }
         .server-container {
             display: flex;
             flex-direction: column;
-            align-items: stretch;
             width: 100%;
         }
         .server {
@@ -56,7 +53,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            cursor: pointer;
             font-size: 18pt;
             position: relative;
             height: 3em;
@@ -72,15 +68,13 @@
             background-color: #737373;
             width: 13em;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding: .8em 1.2em;
+            padding: 1em 1.2em;
             z-index: 1;
-            top: 0;
             left: 100%;
             border-radius: .5em;
         }
         .server:hover {
             transform: translateY(-.2em);
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         }
         .server:hover .serverdrop-content {
             display: block;
