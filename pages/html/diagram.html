@@ -37,7 +37,6 @@
             width: 60em;
             height: 36em;
             border-radius: 3em;
-            margin: 5em;
         }
         .server-container {
             display: flex;
@@ -46,7 +45,6 @@
         }
         .server {
             position: relative;
-            flex-grow: 1;
             background-color: #3d9eff;
             border: .05em solid #666;
             margin: .2em;
@@ -57,7 +55,6 @@
             position: relative;
             height: 3em;
             border-radius: .3em;
-            padding: 10px;
             transition: transform 0.3s;
         }
 
@@ -67,7 +64,6 @@
             position: absolute;
             background-color: #737373;
             width: 13em;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             padding: 1em 1.2em;
             z-index: 1;
             left: 100%;
@@ -114,6 +110,25 @@
 
         
     </style>
+
+    <script>
+        document.addEventListener("click", function(e){
+
+        const server = e.target.closest(".server");
+
+        document.querySelectorAll(".server").forEach(s=>{
+            if(s !== server){
+                s.classList.remove("active");
+            }
+        });
+
+        if(server){
+            server.classList.toggle("active");
+        }
+
+        });
+
+    </script>
     <title>Toolkit</title>
 </head>
 <body>
